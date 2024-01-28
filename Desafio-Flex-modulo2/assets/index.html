@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .contenedor-padre {
+        display: flex;
+        height: 100vh;
+      }
+
+      .barra-lateral {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        border: 1px solid lightgray;
+      }
+
+      .maria {
+        display: flex;
+        border: 1px solid gray;
+        padding: 10px;
+        align-items: center;
+        font-size: 12px;
+      }
+
+      .maria img {
+        border-radius: 30px;
+        margin-right: 10px;
+      }
+
+      .iconos {
+        display: flex;
+      }
+
+      .iconos i {
+        margin-left: 30px;
+      }
+
+      .contenido-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        background-color: #f9faf7;
+      }
+      h5 {
+        font-weight: bolder;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .parrafos {
+        font-size: 11px;
+      }
+
+      .botonChat {
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 200px;
+      }
+
+      button {
+        padding: 30px 80px;
+        background-color: #a491d2;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bolder;
+      }
+
+      h2 {
+        font-size: 45px;
+      }
+
+      .parrafo-seccion2 {
+        text-align: center;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/db37aa0e66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="contenedor-padre">
+      <section class="barra-lateral">
+        <div class="maria">
+          <div>
+            <img src="./imgs/maria.jpg" width="70px" alt="foto de maria" />
+          </div>
+
+          <div>
+            <h5>Maria</h5>
+            <p class="parrafos">Activa ahora</p>
+          </div>
+
+          <div class="iconos">
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <!-- -----------------------Boton --------------------------------- -->
+        <div class="botonChat">
+          <button>Nuevo Chat</button>
+        </div>
+        <!-- -----------------------foto juanita 1  --------------------------------- -->
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.27.14.jpg"
+              width="70px"
+              alt="foto de juanita"
+            />
+          </div>
+
+          <div>
+            <h5>Juanita</h5>
+            <p class="parrafos">Off Line</p>
+          </div>
+        </div>
+        <!-- -----------------------foto Magdalena 2 --------------------------------- -->
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.28.04.jpg"
+              width="70px"
+              alt="foto de magdalena"
+            />
+          </div>
+
+          <div>
+            <h5>Magdalena</h5>
+            <p class="parrafos">Activa ahora</p>
+          </div>
+        </div>
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.28.30.jpg"
+              width="70px"
+              alt="foto de Magdalena"
+            />
+          </div>
+          <!-- -----------------------foto Alberto    --------------------------------- -->
+          <div>
+            <h5>Alberto</h5>
+            <p class="parrafos">Estudiando</p>
+          </div>
+        </div>
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.30.34.jpg"
+              width="70px"
+              alt="foto de alberto"
+            />
+          </div>
+          <!-- -----------------------foto Ignacio    --------------------------------- -->
+          <div>
+            <h5>Ignacio</h5>
+            <p class="parrafos">Activa ahora</p>
+          </div>
+        </div>
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.32.44.jpg"
+              width="70px"
+              alt="foto de ignacio"
+            />
+          </div>
+          <!-- -----------------------foto Maria Jose    --------------------------------- -->
+          <div>
+            <h5>Maria Jose</h5>
+            <p class="parrafos">Off Line</p>
+          </div>
+        </div>
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.30.54.jpg"
+              width="70px"
+              alt="foto de maria jose"
+            />
+          </div>
+          <!-------------------- Luis------------------------------------ -->
+          <div>
+            <h5>Luis</h5>
+            <p class="parrafos">Activa ahora</p>
+          </div>
+        </div>
+        <div class="maria">
+          <div>
+            <img
+              src="./imgs/Screen Shot 2018-11-28 at 15.31.09.jpg"
+              width="70px"
+              alt="foto de Roberto"
+            />
+          </div>
+          <!-------------------- Roberto------------------------------------ -->
+          <div>
+            <h5>Roberto</h5>
+            <p class="parrafos">Trabajando</p>
+          </div>
+        </div>
+      </section>
+      <section class="contenido-principal">
+        <img src="./imgs/hand.png" width="250px" alt="imagen central" />
+
+        <div class="parrafo-seccion2">
+          <h2>Comienza el Networking</h2>
+          <p>
+            Presiona el boton <b>"Nuevo Chat"</b> para comenzar a crear nuevas
+            <br /><br />
+            redes de contacto para tu empresa o emprendimiento.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
